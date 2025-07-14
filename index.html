@@ -12,7 +12,18 @@
 <body ondragstart="return false;">
       <h1>Etch a Sketch</h1>
       <div id="actions">
-            <button>New Grid</button>
+            <select class="btn" name="size-choice" id="size-choice">
+                  <option value="10">10x10</option>
+                  <option value="20">20x20</option>
+                  <option value="30">30x30</option>
+                  <option value="40">40x40</option>
+                  <option value="50">50x50</option>
+                  <option value="60">60x60</option>
+                  <option value="70" selected>70x70</option>
+            </select>
+            <button class="btn" onclick="createNewGrid()">New Grid</button>
+            <button class="btn" id="penMode" onclick="toggleMode()">Pen</button>
+            <button class="btn" id="eraserMode" onclick="toggleMode()">Eraser</button>
       </div>
       <div id="container">
       </div>
